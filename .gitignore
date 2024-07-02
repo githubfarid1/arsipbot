@@ -162,8 +162,8 @@ cython_debug/
 #.idea/
 
 setting.py
-chrome-user-data
-chromedriver
-fileimage
-fileinput
-files_download
+chrome-user-data/
+chromedriver/
+fileimage/
+fileinput/
+files_download/
