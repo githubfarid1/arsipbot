@@ -40,7 +40,7 @@ def parse(xlsfile):
     # breakpoint()
     # user = 'bwsmalukuutara'
     # passwd = 'P@sswd2022!'
-    url = 'https://arsip-sda.pusair-pu.go.id/login'
+    url = 'https://arsip-sda.pusair-pu.go.id/admin/dashboard/'
     # xlsfile = 'data_arsip_tata_tahun_penataan_2024.xlsx'
     
     workbook = load_workbook(filename=xlsfile, read_only=True, data_only=True)

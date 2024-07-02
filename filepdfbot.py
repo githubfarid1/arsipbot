@@ -38,7 +38,7 @@ def browser_init():
     return webdriver.Chrome(service=Service(executable_path=os.path.join(os.getcwd(), "chromedriver", "chromedriver.exe")), options=options)
 
 def parse(year, box):
-    url = 'https://arsip-sda.pusair-pu.go.id/login'
+    url = 'https://arsip-sda.pusair-pu.go.id/admin/dashboard/'
     driver = browser_init()
     driver.maximize_window()
     driver.get(url)
@@ -95,8 +95,8 @@ def parse(year, box):
                 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id='uploader_start']")))
                 time.sleep(1)
                 driver.find_element(By.CSS_SELECTOR, "a[id='uploader_start']").click()
-                # time.sleep(5)
-                WebDriverWait(driver, 120).until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, "span[class='plupload_total_status']"), '100%'))
+                # time.sleep(1)
+                WebDriverWait(driver, 1200).until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, "span[class='plupload_total_status']"), '100%'))
                 time.sleep(2)
 
 def main():
