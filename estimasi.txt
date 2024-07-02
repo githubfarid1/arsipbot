@@ -1,0 +1,8 @@
+irigasi: 346
+airbaku: 114
+pantai: 120
+sungai: 154
+keuangan: 375
+
+total berkas: 1109
+total dokumen: 5384

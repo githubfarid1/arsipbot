@@ -1,0 +1,15 @@
+from pathlib import Path
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+USER = os.getenv('USER')
+PASSWORD = os.getenv('PASSWORD')
+YEAR = os.getenv('YEAR')
+RAK = os.getenv('RAK')
+CHROME_EXE = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+CHROME_USER_DATA = os.getcwd() + os.sep + "chrome-user-data"
+CHROME_PROFILE = "Default"
+PYTHON_EXE = os.getcwd() + os.sep + r"arsipsda_venv\Scripts\python.exe"
+CHROME_DOWNLOAD_PATH = os.getcwd() + os.sep + "files_download"
+PNG_LOCATION = os.getcwd() + os.sep + "fileimage"
