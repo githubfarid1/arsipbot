@@ -164,6 +164,6 @@ def main():
         exit()
     
     parse(xlsfile=args.input)
-    input("End Process...")
+    print("End Process...")
 if __name__ == '__main__':
     main()
