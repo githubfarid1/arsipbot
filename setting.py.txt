@@ -14,3 +14,4 @@ PYTHON_EXE = os.getcwd() + os.sep + r"arsipsda_venv\Scripts\python.exe"
 CHROME_DOWNLOAD_PATH = os.getcwd() + os.sep + "files_download"
 PNG_LOCATION = os.getcwd() + os.sep + "fileimage"
 PDF_LOCATION = os.getcwd() + os.sep + "filepdf"
+PROJECT_PREFIX = 'arsip_tata_'
