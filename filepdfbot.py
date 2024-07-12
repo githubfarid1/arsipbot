@@ -94,9 +94,11 @@ def parse(year, box):
                 time.sleep(1)
                 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id='uploader_start']")))
                 time.sleep(1)
+                breakpoint()
                 driver.find_element(By.CSS_SELECTOR, "a[id='uploader_start']").click()
                 # time.sleep(1)
-                WebDriverWait(driver, 1200).until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, "span[class='plupload_total_status']"), '100%'))
+                # WebDriverWait(driver, 1200).until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, "span[class='plupload_total_status']"), '100%'))
+                WebDriverWait(driver, 1200).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "td[class='sorting_1']")))
                 time.sleep(2)
 
 def main():
