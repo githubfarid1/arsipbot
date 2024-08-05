@@ -142,9 +142,9 @@ def parse(xlsfile):
         Select(driver.find_element(By.CSS_SELECTOR, "select[name='satuan']")).select_by_visible_text(data['bentukarsip'])
         driver.find_element(By.CSS_SELECTOR, "input[name='total']").send_keys(data['jumlah'])
         driver.find_element(By.CSS_SELECTOR, "input[id='inline-{}']".format(data['ket'])).click()
-        # breakpoint()
-        submit = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']")))
-        # breakpoint()
+        driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        submit = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']")))
+        time.sleep(0.5)
         try:
             submit.click()
         except:
