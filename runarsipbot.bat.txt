@@ -1,0 +1,1 @@
+python arsipbot.py -i  .\fileinput\data_arsip_tata_tahun_penataan_2024_box_32.xlsx
