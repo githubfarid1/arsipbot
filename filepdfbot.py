@@ -111,7 +111,7 @@ def main():
         print('use: python filepdfbot.py -y <year> -b <box>')
         exit()
     parse(args.year, args.box)
-    input("End Process...")
+    print("End Process...")
 
 if __name__ == '__main__':
     main()
